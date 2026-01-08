@@ -1,0 +1,47 @@
+# --------------------
+# Virtual Environment
+# --------------------
+env/
+venv/
+*.venv
+
+# --------------------
+# Python
+# --------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# --------------------
+# Jupyter / IPython
+# --------------------
+.ipynb_checkpoints/
+*.ipynb
+
+# --------------------
+# Logs and temp files
+# --------------------
+*.log
+*.out
+*.tmp
+*.bak
+
+# --------------------
+# Data files (optional, if not storing in repo)
+# --------------------
+*.csv
+*.xlsx
+*.json
+
+# --------------------
+# Model / Artifacts
+# --------------------
+*.pkl
+*.joblib
+
+# --------------------
+# VS Code
+# --------------------
+.vscode/
