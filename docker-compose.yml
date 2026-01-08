@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  distress-api:
+    build: .
+    container_name: financial-distress-predictor
+    ports:
+      - "8000:8000"   # expose FastAPI port
+    restart: always
+    environment:
+      - MODEL_PATH=financial_distress_model.pkl
+      - SCALER_PATH=scaler.pkl
+      - FEATURES_PATH=optimal_features.pkl

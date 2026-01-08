@@ -1,0 +1,10 @@
+python -m venv env        # create a virtual environment
+source env/bin/activate    # activate the virtual environment (Linux/Mac)
+
+pip freeze > requirements.txt
+
+docker build -t financial-distress-predictor:latest .
+
+docker run -p 8000:8000 financial-distress-predictor:latest
+touch src/__init__.py
+

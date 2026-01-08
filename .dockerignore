@@ -1,0 +1,25 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+env/
+venv/
+
+# Jupyter / IDE files
+.ipynb_checkpoints/
+*.ipynb
+.vscode/
+.idea/
+
+# Data files (if large, don’t copy)
+*.csv
+*.xlsx
+
+# Logs
+*.log
+
+# OS files
+.DS_Store

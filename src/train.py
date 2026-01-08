@@ -143,7 +143,7 @@ if __name__ == "__main__":
   # =============================
   # Step 1: Load dataset
   # =============================
-  filename = "Financial Distress.csv"
+  filename = "/workspaces/Financial-Distress-Predictor/data/Financial Distress.csv"
   df = read_dataframe(filename)
 
   X = df.iloc[:, 3:]  
@@ -198,13 +198,13 @@ if __name__ == "__main__":
   # =============================
   # Step 7: Saving the Model
   # =============================
-  joblib.dump(final_model, "financial_distress_model.pkl")
-  joblib.dump(scaler, "scaler.pkl")
-  joblib.dump(optimal_features, "optimal_features.pkl")
+  joblib.dump(final_model, "/workspaces/Financial-Distress-Predictor/models/financial_distress_model.pkl")
+  joblib.dump(scaler, "/workspaces/Financial-Distress-Predictor/models/scaler.pkl")
+  joblib.dump(optimal_features, "/workspaces/Financial-Distress-Predictor/models/optimal_features.pkl")
 
 
   # optimal_features
-  with open("output.txt", "w") as f:
+  with open("/workspaces/Financial-Distress-Predictor/models/output.txt", "w") as f:
     for feature in optimal_features:
       f.write(feature + "\n") 
       
