@@ -31,7 +31,6 @@ __pycache__/
 # --------------------
 # Data files (optional, if not storing in repo)
 # --------------------
-*.csv
 *.xlsx
 *.json
 
