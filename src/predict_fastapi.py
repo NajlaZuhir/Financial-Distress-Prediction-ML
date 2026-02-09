@@ -42,3 +42,7 @@ def predict(data: CompanyFeatures):
         "probability": round(float(proba), 4),
         "prediction": prediction
     }
+
+@app.get("/")
+def root():
+    return {"message": "Financial Distress Prediction API is running!"}
